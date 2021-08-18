@@ -34,6 +34,18 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsd-6F-zXL">
+                                <rect key="frame" x="151" y="804" width="112" height="49"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Bgh-xj-J44"/>
+                                    <constraint firstAttribute="width" constant="112" id="p8B-Tz-GmM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -41,6 +53,9 @@
                             <constraint firstItem="y6v-Jb-bgi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="3bE-7T-n22"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y6v-Jb-bgi" secondAttribute="bottom" constant="77" id="EjW-DG-bgQ"/>
                             <constraint firstItem="y6v-Jb-bgi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ST9-nO-F7v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rsd-6F-zXL" secondAttribute="bottom" constant="9" id="TM0-6O-uSa"/>
+                            <constraint firstItem="Rsd-6F-zXL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y6R-mc-jSx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rsd-6F-zXL" secondAttribute="bottom" constant="9" id="wIV-la-0sm"/>
                             <constraint firstItem="y6v-Jb-bgi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z4c-DV-tbO"/>
                         </constraints>
                     </view>
@@ -50,6 +65,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
