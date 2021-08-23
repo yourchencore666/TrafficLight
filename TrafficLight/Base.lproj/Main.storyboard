@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,8 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsd-6F-zXL">
+                                <rect key="frame" x="151" y="804" width="112" height="49"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Rsd-6F-zXL" secondAttribute="height" multiplier="16:7" id="Wt7-n1-hW4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qtk-kO-BSm"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="y6v-Jb-bgi">
-                                <rect key="frame" x="107" y="111" width="200" height="674"/>
+                                <rect key="frame" x="107" y="85" width="200" height="674"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePV-nn-N93">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="204"/>
@@ -33,32 +47,17 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsd-6F-zXL">
-                                <rect key="frame" x="151" y="804" width="112" height="49"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="Bgh-xj-J44"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="p8B-Tz-GmM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="START">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qtk-kO-BSm"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="y6v-Jb-bgi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="3bE-7T-n22"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y6v-Jb-bgi" secondAttribute="bottom" constant="77" id="EjW-DG-bgQ"/>
-                            <constraint firstItem="y6v-Jb-bgi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ST9-nO-F7v"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rsd-6F-zXL" secondAttribute="bottom" constant="9" id="TM0-6O-uSa"/>
-                            <constraint firstItem="Rsd-6F-zXL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y6R-mc-jSx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rsd-6F-zXL" secondAttribute="bottom" constant="9" id="wIV-la-0sm"/>
-                            <constraint firstItem="y6v-Jb-bgi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z4c-DV-tbO"/>
+                            <constraint firstItem="Rsd-6F-zXL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="52c-LV-zoz"/>
+                            <constraint firstItem="y6v-Jb-bgi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="FRQ-eW-GsM"/>
+                            <constraint firstItem="Rsd-6F-zXL" firstAttribute="top" secondItem="PKv-v9-CbB" secondAttribute="bottom" constant="45" id="OWn-fg-v1g"/>
+                            <constraint firstItem="y6v-Jb-bgi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.752232" id="UzU-qF-0MQ"/>
+                            <constraint firstItem="Rsd-6F-zXL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:8" id="WU5-Qg-1Fp"/>
+                            <constraint firstItem="y6v-Jb-bgi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:112" id="aD4-ja-a0d"/>
+                            <constraint firstItem="y6v-Jb-bgi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wnH-Yr-3z0"/>
                         </constraints>
                     </view>
                     <connections>
